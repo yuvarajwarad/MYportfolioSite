@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header> should render component 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <nav>
+      <div
+        className="yuvi-warad"
+      />
+      <div
+        className="right"
+      >
+        <ul>
+          <li />
+          <li>
+            <a
+              href="#exp"
+              onClick={[Function]}
+            >
+              Work Experience
+            </a>
+          </li>
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+`;

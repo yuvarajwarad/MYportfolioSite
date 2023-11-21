@@ -1,0 +1,82 @@
+/* Home.css */
+
+/* Set a background image for the home-container and adjust text color for better contrast */
+.home-container {
+  background-image: url('./background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Apply a zoom animation to vertical-box elements */
+.vertical-box.zoom-in-out {
+  animation: zoomAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1); /* Adjust the scale value for the desired zoom level */
+  }
+}
+
+/* Style the images within vertical-box elements */
+.image-top {
+  width: 100px; /* Set your initial image size */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Adjust the image size and zoom level when hovered */
+.image-top:hover {
+  width: 120px; /* Set your zoomed image size */
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .leftSection {
+    text-align: center; /* Center text for smaller screens */
+    margin: 10px;
+  }
+
+  .myimgyuvi {
+    width: 100%; /* Ensure the image takes full width on smaller screens */
+    max-height: auto;
+    margin: 10px 0;
+  }
+
+  .vertical-box {
+    margin: 10px;
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .vertical-box-title {
+    width: 100%;
+  }
+
+  .vertical-box-desc {
+    width: 100%;
+  }
+
+  .image-top {
+    width: 80px; /* Reduce the initial image size for smaller screens */
+  }
+  
+  /* Add more responsive adjustments as needed */
+}

@@ -1,0 +1,26 @@
+/* Header.css */
+.monkey {
+  position: absolute;
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.monkey img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+}
+
+.monkey.jump {
+  animation: jumpAnimation 1s ease-in-out infinite alternate;
+  opacity: 1;
+}
+
+
+@keyframes jumpAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}

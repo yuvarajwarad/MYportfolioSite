@@ -1,0 +1,39 @@
+.education-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.education-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.education-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 25px;
+  height: 10px;
+}
+
+.education-item {
+  background-color: #f2f2f2;
+  padding: 40px;
+  margin: 10px 0;
+  border-radius: 129px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #b5a317;
+}
+
+.education-item p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: black;
+}
+
+/* Add any additional styling as needed */

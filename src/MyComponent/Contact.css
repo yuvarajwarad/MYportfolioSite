@@ -1,0 +1,67 @@
+/* Contact.css */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .address {
+    margin-bottom: 10px;
+  }
+  
+  .email a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .resume-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .resume-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links a img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Add your preferred animation properties here */
+  
